@@ -1,0 +1,12 @@
+{
+  "name": "manada",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Demo de tienda de mascotas con variantes, suscripción mensual, envío por código postal y carrito. HTML, CSS y JavaScript sin dependencias.",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=20" }
+}

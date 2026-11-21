@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Manada — Todo para tu mascota | Tienda de ejemplo</title>
+<meta name="description" content="Tienda de mascotas de ejemplo con alimento por suscripción, variantes, envío por código postal y carrito. Demo de portfolio.">
+<meta name="theme-color" content="#FAF8F4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#catalogo">Saltar al catálogo</a>
+<header class="top"><div class="wrap">
+  <a class="brand" href="#"><i aria-hidden="true">&#9679;</i>Manada</a>
+  <nav aria-label="Principal"><a href="#catalogo">Productos</a><a href="#calculadora">Calculadora</a><a href="#consejos">Consejos</a><a href="#envios">Envíos</a></nav>
+  <button id="open-cart" class="cart-btn" type="button" aria-haspopup="dialog"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg> <span>Carrito</span> <span id="cart-count" aria-label="0 productos">0</span></button>
+</div></header>
+<main>
+<section class="hero"><div class="wrap"><div class="hero-card">
+  <div class="hero-copy">
+    <h1>Lo que necesita tu <em>manada</em>, en tu puerta.</h1>
+    <p class="lead">Alimento, camas y paseo para perros y gatos. Armá tu suscripción mensual y ahorrá un 10% en cada envío.</p>
+    <a class="btn btn-primary" href="#catalogo">Ver productos</a>
+    <div class="pills"><span>Envío mensual -10%</span><span>3 cuotas sin interés</span><span>Gratis desde $ 60.000</span></div>
+  </div>
+  <div class="hero-media"><img class="hero-img" src="https://images.unsplash.com/photo-1714068691256-cd3d65f97795?w=1000&h=800&fit=crop&q=75&fm=jpg" width="1000" height="800" alt="Perro marrón y blanco parado junto a su cuenco de comida"></div>
+</div></div></section>
+<section id="catalogo" class="wrap" aria-labelledby="cat-h">
+  <div class="sec-title"><h2 id="cat-h">Productos</h2><span>8 productos de ejemplo</span></div>
+  <div class="toolbar">
+    <div id="filters" class="filters"></div>
+    <div class="tools">
+      <label class="field"><span>Buscar producto</span><input id="search" type="search" placeholder="Ej. alimento, correa" autocomplete="off"></label>
+      <label class="field"><span>Ordenar</span><select id="sort"><option value="relevance">Destacados</option><option value="price-asc">Menor precio</option><option value="price-desc">Mayor precio</option><option value="name">Nombre (A-Z)</option></select></label>
+    </div>
+  </div>
+  <p id="results-live" class="sr" aria-live="polite"></p>
+  <ul id="grid" class="grid"></ul>
+  <div id="empty" class="empty" hidden><p>No encontramos nada con esos filtros.</p><button id="clear-filters" class="btn btn-quiet" type="button">Limpiar filtros</button></div>
+</section>
+<section id="calculadora" class="block wrap" aria-labelledby="calc-h">
+  <div class="calc">
+    <div class="calc-intro">
+      <h2 id="calc-h">¿Cuánto tiene que comer?</h2>
+      <p class="lead">Contanos cuánto pesa y te decimos una ración diaria de alimento seco y cuánto te dura cada bolsa, para que sepas cuándo pedir la próxima.</p>
+    </div>
+    <form id="calc-form" class="calc-card" novalidate>
+      <fieldset class="calc-group"><legend>Es un</legend>
+        <div class="opts">
+          <label class="opt"><input type="radio" name="animal" value="perro" checked><span class="opt-label">Perro</span></label>
+          <label class="opt"><input type="radio" name="animal" value="gato"><span class="opt-label">Gato</span></label>
+        </div>
+      </fieldset>
+      <fieldset class="calc-group"><legend>Etapa</legend>
+        <div class="opts">
+          <label class="opt"><input type="radio" name="stage" value="cachorro"><span class="opt-label">Cachorro o gatito</span></label>
+          <label class="opt"><input type="radio" name="stage" value="adulto" checked><span class="opt-label">Adulto</span></label>
+          <label class="opt"><input type="radio" name="stage" value="senior"><span class="opt-label">Senior</span></label>
+        </div>
+      </fieldset>
+      <label class="field"><span>Peso en kg</span><input id="calc-weight" name="weight" type="text" inputmode="decimal" autocomplete="off" placeholder="Ej. 12 o 4,5" aria-describedby="calc-msg"></label>
+      <p id="calc-msg" class="calc-msg" role="status"></p>
+      <button class="btn btn-primary" type="submit">Calcular ración</button>
+      <div id="calc-out" class="calc-out" role="status" aria-live="polite" hidden>
+        <p id="calc-grams" class="calc-grams"></p>
+        <ul id="calc-bags" class="calc-bags"></ul>
+        <p class="calc-note">Es una guía general: cada animal es distinto y las marcas varían. Ante cualquier duda, consultá con tu veterinario.</p>
+        <a class="btn btn-quiet" href="#catalogo">Ver alimentos</a>
+      </div>
+    </form>
+  </div>
+</section>
+<section id="consejos" class="block wrap" aria-labelledby="cons-h">
+  <h2 id="cons-h">Consejos de la manada</h2>
+  <p class="lead">Notas cortas para el día a día. No reemplazan la consulta con un veterinario.</p>
+  <div class="tips">
+    <details><summary>Cómo cambiar de alimento sin que le caiga mal</summary>
+      <p>Hacelo de a poco, durante una semana: los días 1 y 2, un cuarto de alimento nuevo y tres cuartos del anterior; los días 3 y 4, mitad y mitad; los días 5 y 6, tres cuartos del nuevo; el día 7, solo el nuevo. Si aparece diarrea o rechaza la comida, volvé un paso atrás.</p></details>
+    <details><summary>Agua fresca, siempre</summary>
+      <p>Cambiala todos los días y lavá el bol. A muchos gatos les gusta más el agua que corre: una fuente puede ayudar a que tomen más. Si pasa a tomar mucha más agua de lo habitual, conviene consultar.</p></details>
+    <details><summary>Paseos cuando hace calor</summary>
+      <p>Salí temprano o al atardecer. Apoyá el dorso de la mano en el asfalto cinco segundos: si no lo aguantás, es demasiado caliente para sus almohadillas. Llevá agua y no lo dejes nunca solo en el auto.</p></details>
+    <details><summary>Cuándo ir al veterinario sin esperar</summary>
+      <p>Si tu gato no come por más de un día, si tu perro vomita varias veces, está muy decaído o tiene la panza dura e hinchada, no esperes: consultá enseguida.</p></details>
+  </div>
+</section>
+<section id="envios" class="benefits"><div class="wrap"><ul><li><strong>Suscripción mensual</strong><span>Elegí el alimento una vez y recibilo cada mes con 10% menos.</span></li><li><strong>Envío a todo el país</strong><span>Gratis desde $ 60.000. Calculá el costo con tu código postal.</span></li><li><strong>Cambios sin vueltas</strong><span>Si tu mascota no lo acepta, lo cambiamos.</span></li></ul></div></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <p>Productos y precios de ejemplo. Es una demostración: no se procesan pagos reales.</p>
+  <p>Fotos: <a href="https://unsplash.com">Unsplash</a>. Sitio de ejemplo hecho por <a href="https://laura-moyano-web.pages.dev/es">Laura Moyano</a>.</p>
+</div></footer>
+
+<dialog id="pdialog" class="dlg dlg-product" aria-labelledby="p-title">
+  <button id="p-close" class="icon-btn dlg-close" type="button" aria-label="Cerrar detalle">&times;</button>
+  <div class="p-grid">
+    <img id="p-img" class="p-img" src="" alt="" width="900" height="1125">
+    <div class="p-info">
+      <h2 id="p-title" class="p-title"></h2>
+      <p id="p-desc" class="p-desc"></p>
+      <dl id="p-details" class="p-details" hidden></dl>
+      <fieldset id="p-variants" class="p-variants">
+        <legend id="p-variants-legend"></legend>
+        <div id="p-options" class="opts"></div>
+      </fieldset>
+      <label id="p-sub-wrap" class="sub" hidden><input id="p-sub" type="checkbox"><span>Recibirlo todos los meses <strong>(10% menos)</strong></span></label>
+      <div class="p-price-row"><span id="p-price" class="p-price"></span><span id="p-inst" class="inst"></span></div>
+      <p id="p-note" class="p-note" role="status"></p>
+      <p id="p-live" class="sr" aria-live="polite"></p>
+      <button id="p-add" class="btn btn-primary btn-block" type="button">Agregar al carrito</button>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="cart" class="dlg dlg-cart" aria-labelledby="cart-title">
+  <div class="cart-head">
+    <h2 id="cart-title">Tu carrito</h2>
+    <button id="close-cart" class="icon-btn" type="button" aria-label="Cerrar carrito">&times;</button>
+  </div>
+  <p id="cart-empty" class="cart-empty">Todavía no agregaste nada. Mirá el catálogo y elegí lo que te guste.</p>
+  <div id="cart-body" class="cart-body" hidden>
+    <p id="free-ship" class="free-ship" aria-live="polite"></p>
+    <div id="free-bar" class="free-bar" aria-hidden="true"><span></span></div>
+    <ul id="cart-list" class="cart-list"></ul>
+    <form id="postal-form" class="postal" novalidate>
+      <label for="postal">Código postal para calcular el envío</label>
+      <div class="postal-row">
+        <input id="postal" name="postal" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="8" placeholder="Ej. 1425">
+        <button class="btn btn-quiet" type="submit">Calcular</button>
+      </div>
+      <p id="postal-msg" class="postal-msg" role="status"></p>
+    </form>
+    <dl class="totals">
+      <div><dt>Subtotal</dt><dd id="t-sub"></dd></div>
+      <div id="t-save-row" hidden><dt>Ahorro por envío mensual</dt><dd id="t-save"></dd></div>
+      <div><dt>Envío</dt><dd id="t-ship"></dd></div>
+      <div class="totals-total"><dt>Total</dt><dd id="t-total"></dd></div>
+    </dl>
+    <p id="t-total-note" class="t-note"></p>
+    <p id="t-inst" class="inst"></p>
+    <button id="checkout" class="btn btn-primary btn-block" type="button">Finalizar compra</button>
+    <p id="demo-msg" class="demo-msg" role="status"></p>
+  </div>
+</dialog>
+
+<script type="module" src="js/main.js"></script>
+<script type="module" src="js/calc.js"></script>
+</body>
+</html>
