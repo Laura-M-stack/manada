@@ -92,8 +92,8 @@ export const PRODUCTS = [
         "Mirá la calculadora de esta página"
       ]
     ],
-    "img": "https://images.unsplash.com/photo-1591946559594-8c6d3b7391eb?w=600&h=750&fit=crop&q=75&fm=jpg",
-    "imgLarge": "https://images.unsplash.com/photo-1591946559594-8c6d3b7391eb?w=900&h=1125&fit=crop&q=80&fm=jpg"
+    "img": "img/fotos/alimento-perro-adulto-600x750.webp",
+    "imgLarge": "img/fotos/alimento-perro-adulto-900x1125.webp"
   },
   {
     "id": "alimento-razas-chicas",
@@ -136,8 +136,8 @@ export const PRODUCTS = [
         "Mirá la calculadora de esta página"
       ]
     ],
-    "img": "https://images.unsplash.com/photo-1695023265600-07f536e8ca4c?w=600&h=750&fit=crop&q=75&fm=jpg",
-    "imgLarge": "https://images.unsplash.com/photo-1695023265600-07f536e8ca4c?w=900&h=1125&fit=crop&q=80&fm=jpg"
+    "img": "img/fotos/alimento-razas-chicas-600x750.webp",
+    "imgLarge": "img/fotos/alimento-razas-chicas-900x1125.webp"
   },
   {
     "id": "alimento-gato",
@@ -181,8 +181,8 @@ export const PRODUCTS = [
         "Mirá la calculadora de esta página"
       ]
     ],
-    "img": "https://images.unsplash.com/photo-1558993457-4bc6ec2c3734?w=600&h=750&fit=crop&q=75&fm=jpg",
-    "imgLarge": "https://images.unsplash.com/photo-1558993457-4bc6ec2c3734?w=900&h=1125&fit=crop&q=80&fm=jpg"
+    "img": "img/fotos/alimento-gato-600x750.webp",
+    "imgLarge": "img/fotos/alimento-gato-900x1125.webp"
   },
   {
     "id": "pate-gatito",
@@ -218,8 +218,8 @@ export const PRODUCTS = [
         "Una vez abierta, en la heladera y dentro de las 48 horas"
       ]
     ],
-    "img": "https://images.unsplash.com/photo-1616668983570-a971956d8928?w=600&h=750&fit=crop&q=75&fm=jpg",
-    "imgLarge": "https://images.unsplash.com/photo-1616668983570-a971956d8928?w=900&h=1125&fit=crop&q=80&fm=jpg"
+    "img": "img/fotos/pate-gatito-600x750.webp",
+    "imgLarge": "img/fotos/pate-gatito-900x1125.webp"
   },
   {
     "id": "cama-nube",
@@ -268,8 +268,8 @@ export const PRODUCTS = [
         "Funda apta para lavarropas, hasta 40 °C"
       ]
     ],
-    "img": "https://images.unsplash.com/photo-1492748046438-4b6d9ebe0c11?w=600&h=750&fit=crop&q=75&fm=jpg",
-    "imgLarge": "https://images.unsplash.com/photo-1492748046438-4b6d9ebe0c11?w=900&h=1125&fit=crop&q=80&fm=jpg"
+    "img": "img/fotos/cama-nube-600x750.webp",
+    "imgLarge": "img/fotos/cama-nube-900x1125.webp"
   },
   {
     "id": "manta-polar",
@@ -305,8 +305,8 @@ export const PRODUCTS = [
         "Lavar a máquina en frío, sin suavizante"
       ]
     ],
-    "img": "https://images.unsplash.com/photo-1521673461164-de300ebcfb17?w=600&h=750&fit=crop&q=75&fm=jpg",
-    "imgLarge": "https://images.unsplash.com/photo-1521673461164-de300ebcfb17?w=900&h=1125&fit=crop&q=80&fm=jpg"
+    "img": "img/fotos/manta-polar-600x750.webp",
+    "imgLarge": "img/fotos/manta-polar-900x1125.webp"
   },
   {
     "id": "correa-reforzada",
@@ -351,8 +351,8 @@ export const PRODUCTS = [
         "1,5 m"
       ]
     ],
-    "img": "https://images.unsplash.com/photo-1708062270853-ee7c66b69f07?w=600&h=750&fit=crop&q=75&fm=jpg",
-    "imgLarge": "https://images.unsplash.com/photo-1708062270853-ee7c66b69f07?w=900&h=1125&fit=crop&q=80&fm=jpg"
+    "img": "img/fotos/correa-reforzada-600x750.webp",
+    "imgLarge": "img/fotos/correa-reforzada-900x1125.webp"
   },
   {
     "id": "pretal-ajustable",
@@ -397,7 +397,7 @@ export const PRODUCTS = [
         "Pecho: S 40-52 cm, M 50-65 cm, L 60-80 cm"
       ]
     ],
-    "img": "https://images.unsplash.com/photo-1615394968637-de55ca4b2e64?w=600&h=750&fit=crop&q=75&fm=jpg",
-    "imgLarge": "https://images.unsplash.com/photo-1615394968637-de55ca4b2e64?w=900&h=1125&fit=crop&q=80&fm=jpg"
+    "img": "img/fotos/pretal-ajustable-600x750.webp",
+    "imgLarge": "img/fotos/pretal-ajustable-900x1125.webp"
   }
 ];
